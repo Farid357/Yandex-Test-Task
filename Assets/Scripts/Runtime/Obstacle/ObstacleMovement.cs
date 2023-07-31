@@ -9,7 +9,6 @@ namespace YandexTestTask.Gameplay
         [SerializeField] private float _timeToReachPosition = 1.4f;
         [SerializeField] private float _distanceToMove = 1.5f;
         [SerializeField] private float _timeToWaitNextMove = 0.45f;
-        [SerializeField] private float _speed = 4.5f;
         
         private readonly Vector2[] _directions = 
         {
