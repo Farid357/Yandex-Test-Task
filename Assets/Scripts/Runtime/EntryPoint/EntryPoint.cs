@@ -17,6 +17,8 @@ namespace YandexTestTask.Core
         
         [Header("Buttons")]
         [SerializeField] private Button _playButton;
+
+        [SerializeField] private CharacterCamera _camera;
         
         private GameLoop _gameLoop;
 
@@ -30,7 +32,8 @@ namespace YandexTestTask.Core
             _playButton.gameObject.SetActive(false);
             _coinFactory.Initialize(new WalletPresenter(_walletView));
             _obstacleFactory.Initialize();
-
+            _camera.Initialize();
+            
             Character character = _characterFactory.Create();
             
             _gameLoop = new GameLoop(new List<IGameLoopObject>

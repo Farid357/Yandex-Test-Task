@@ -22,11 +22,6 @@ namespace YandexTestTask.Gameplay
             StartCoroutine(Move());
         }
 
-        private void Update()
-        {
-            transform.Translate(Vector3.left * _speed * Time.deltaTime);
-        }
-
         private IEnumerator Move()
         {
             while (true)

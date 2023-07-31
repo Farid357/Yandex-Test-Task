@@ -9,6 +9,8 @@ namespace YandexTestTask.Gameplay
         [SerializeField] private Obstacle _prefab;
         [SerializeField] private Transform[] _spawnPoints;
 
+        private int _lastCreatedSpawnPointIndex;
+        
         public void Initialize()
         {
             StartCoroutine(StartCreate());
@@ -26,8 +28,14 @@ namespace YandexTestTask.Gameplay
 
         private void Create()
         {
-            Vector3 spawnPosition = _spawnPoints[Random.Range(0, _spawnPoints.Length)].position;
+            int spawnPointIndex = Random.Range(0, _spawnPoints.Length);
+        
+            if (_lastCreatedSpawnPointIndex == spawnPointIndex)
+                spawnPointIndex = _spawnPoints.Length - 1;
+            
+            Vector3 spawnPosition = _spawnPoints[spawnPointIndex].position;
             Instantiate(_prefab, spawnPosition, Quaternion.identity);
+            _lastCreatedSpawnPointIndex = spawnPointIndex;
         }
     }
 }

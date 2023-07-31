@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8564748553630333272}
   - component: {fileID: 3459676065339057580}
   - component: {fileID: 4810219619090062545}
-  - component: {fileID: 6178757359138541777}
+  - component: {fileID: 1596963976227093588}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 0.6034083, b: 0, a: 1}
   m_FlipX: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1e86013ea7450f8d2d74cdabf2be4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6178757359138541777
+--- !u!114 &1596963976227093588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,10 +134,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 489897788616714285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 013607936eeb4934967f091e1dbacc28, type: 3}
+  m_Script: {fileID: 11500000, guid: 1198d4214dff4bc0a0cec998a400da4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _timeToReachPosition: 1.4
   _distanceToMove: 1.25
-  _timeToWaitNextMove: 0.45
-  _speed: 6
+  _timeToWaitNextMove: 0.3
+  _speed: 4.5

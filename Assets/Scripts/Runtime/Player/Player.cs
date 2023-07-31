@@ -19,7 +19,8 @@ namespace YandexTestTask.Gameplay
         public void Update(float deltaTime)
         {
             Vector2 moveDirection = _input.Movement.MoveDirection.ReadValue<Vector2>();
-            _character.Move(moveDirection == Vector2.zero ? Vector2.down : moveDirection);
+            Vector2 verticalDirection = moveDirection == Vector2.zero ? Vector2.down : moveDirection;
+            _character.Move(verticalDirection + Vector2.right);
         }
     }
 }
