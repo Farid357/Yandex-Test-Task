@@ -6,10 +6,15 @@
 ![badge](https://img.shields.io/static/v1?label=platform&message=WebGl&color=darkred&style=for-the-badge)
 ## Overview 
 Small game for **Yandex**.
+
+
 Itch io: https://farid777.itch.io/prototype
 
 ## Project Follows
 - Simple architecture
 - Entry Point
 - No typecasts
-  
+
+## Plugins
+- TextMeshPro
+- New Input System 
